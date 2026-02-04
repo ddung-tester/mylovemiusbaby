@@ -24,7 +24,7 @@ export const AudioProvider = ({ children }) => {
 
   // Initialize audio element
   if (!audioRef.current) {
-    audioRef.current = new Audio(`${import.meta.env.BASE_URL}music.mp3`);
+    audioRef.current = new Audio('/music.mp3');
     audioRef.current.loop = true;
     audioRef.current.volume = 0; // Start at 0 for fade-in
   }
